@@ -537,7 +537,11 @@ class EuWithdrawalCore
      */
     public static function buttonHtml(string $href, string $label, string $where): string
     {
-        $where = $where === 'end' ? 'end' : 'footer';
+        $where = strtolower(trim((string)$where));
+        $where = trim(preg_replace('/[^a-z0-9_-]+/', '-', $where), '-');
+        if ($where === '') {
+            $where = 'footer';
+        }
         $html = '<style>'
             . '.euw-wrap{text-align:center;margin:12px 0;clear:both}'
             . '.euw-wrap.euw-end{padding:12px 0}'

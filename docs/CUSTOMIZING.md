@@ -32,6 +32,14 @@ The footer button's markup and style come from `EuWithdrawalCore::buttonHtml()`.
 | `NOTIFY_FOOTER_END` | just before `</body>` (every version) | the button where the first hook doesn't fire |
 | `NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT` | `zen_mail()` | HTML for a guest's acknowledgment |
 | `NOTIFY_ORDER_INVOICE_CONTENT_READY_TO_SEND` | `order.php`, the order confirmation email (same arguments 1.5.8 to 3.0.0) | the withdrawal link: text before the disclaimer, HTML in `$EMAIL_ORDER_MESSAGE` |
+| `NOTIFY_EU_WITHDRAWAL_BUTTON` | Where you choose in your code | To allow you to place the button in an additional or alternative place |
+
+To use the 'NOTIFY_EU_WITHDRAWAL_BUTTON' notifier place a notifier in your code where you want the button to appear.
+
+```
+$zco_notifier->notify('NOTIFY_EU_WITHDRAWAL_BUTTON', ['label' => 'extra', 'shown'=>false])
+```
+The array contains the `label` you want to use (any characters but do not use 'end' or 'footer') and `shown` is true or false. If true no further buttons are shown. If false then additional buttons will be shown including one of the default buttons.
 
 The emails go through `zen_mail()` with the modules `eu_withdrawal_ack` and `eu_withdrawal_notice`, so other email hooks (and Preview Email Pro's templates) can tell them apart.
 

@@ -52,6 +52,7 @@ class zcObserverEuWithdrawal extends base
             'NOTIFY_FOOTER_END',
             'NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT',
             'NOTIFY_ORDER_INVOICE_CONTENT_READY_TO_SEND',
+            'NOTIFY_EU_WITHDRAWAL_BUTTON',
         ]);
     }
 
@@ -65,6 +66,10 @@ class zcObserverEuWithdrawal extends base
             EuWithdrawalCore::mailFormat($p2, $p3);
         } elseif ($eventID === 'NOTIFY_ORDER_INVOICE_CONTENT_READY_TO_SEND') {
             $this->addOrderEmailLink($class, is_array($p1) ? (int)($p1['zf_insert_id'] ?? 0) : 0, $p2, $p3);
+        } elseif ($eventID === 'NOTIFY_EU_WITHDRAWAL_BUTTON') {
+            $where = $p1['label'] ?? 'footer';
+            $this->render($where);
+            $this->shown = $p1['shown'] ?? true;
         }
     }
 
