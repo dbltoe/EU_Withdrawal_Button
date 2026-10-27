@@ -3,7 +3,7 @@
 ## Wording
 
 Every word of the page and both emails is in
-`zc_plugins/EuWithdrawalButton/v1.1.1/catalog/includes/languages/english/extra_definitions/lang.eu_withdrawal.php`.
+`zc_plugins/EuWithdrawalButton/v1.1.2/catalog/includes/languages/english/extra_definitions/lang.eu_withdrawal.php`.
 Copy a constant into an override language file to change it. The admin text is in the same path under `admin/`.
 
 That English file is the single source: Zen Cart loads a plugin's language files only from the folder of the session's language, with no English fallback, so the plugin fills any constant a language doesn't define from it.

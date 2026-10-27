@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.2] - 2026-10-27
+
+- Plugin Manager only: once the plugin is installed, its panel has a Settings button that opens Configuration > EU Withdrawal Button. It isn't shown before Install or after Uninstall. The installer saves the panel again at Install, Upgrade and Uninstall, because Zen Cart 1.5.8, 2.0 and 2.1 otherwise keep the panel they saw first.
+- The buttons are one row: ReadMe | Settings | Forum Thread | GitHub. "Read Me" is now "ReadMe" and "Forum Support Thread" is now "Forum Thread", and the buttons are a little narrower (8px side padding, 4px gaps) so all four fit on one line from a 1366px-wide window up. Nothing changes on the storefront or in the settings.
+
 ## [1.1.1] - 2026-10-06
 
 - Documentation only: EU Withdrawal Button Pro is out, so the readme's Pro section and README.md now say what it does and where to get it instead of calling it planned. No code or setting changes.
@@ -26,6 +31,7 @@ First release.
 - The two legal labels, verbatim from the directive, for English, Dutch, Finnish, French, German, Italian and Spanish, chosen by language code. Other text falls back to English for a store language with no translation.
 - Preview Email definitions for both emails.
 
+[1.1.2]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.2
 [1.1.1]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.1
 [1.1.0]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.0
 [1.0.0]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.0.0

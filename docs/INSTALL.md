@@ -8,9 +8,9 @@
 
 ## Install
 
-1. Upload `zc_plugins/EuWithdrawalButton` into your store's `zc_plugins` folder, so `zc_plugins/EuWithdrawalButton/v1.1.1/manifest.php` exists.
+1. Upload `zc_plugins/EuWithdrawalButton` into your store's `zc_plugins` folder, so `zc_plugins/EuWithdrawalButton/v1.1.2/manifest.php` exists.
 2. Modules > Plugin Manager > EU Withdrawal Button > **Install**.
-3. Configuration > EU Withdrawal Button: set **Store Time Zone** (for example `Europe/Berlin`); hosting servers often run on UTC.
+3. Configuration > EU Withdrawal Button (or the plugin's **Settings** button in Plugin Manager): set **Store Time Zone** (for example `Europe/Berlin`); hosting servers often run on UTC.
 4. Check the storefront footer for the button, and send one test withdrawal for an order of your own.
 
 The installer refuses, before writing anything, when the database already has an `eu_withdrawals` table that belongs to something else.

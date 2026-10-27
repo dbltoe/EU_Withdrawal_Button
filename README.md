@@ -31,7 +31,7 @@ It gives a store the function Article 11a describes. It doesn't decide whether a
 
 ## Layout
 
-- `zc_plugins/EuWithdrawalButton/v1.1.1/`: the plugin, exactly as it's uploaded.
+- `zc_plugins/EuWithdrawalButton/v1.1.2/`: the plugin, exactly as it's uploaded.
 - `readme.html`: a copy of the plugin's readme at the top of the download.
 
 ## Support

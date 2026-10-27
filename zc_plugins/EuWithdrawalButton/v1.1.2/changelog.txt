@@ -1,6 +1,15 @@
 EU Withdrawal Button -- changelog
 =================================
 
+v1.1.2
+------
+- Plugin Manager only: once the plugin is installed, its panel has
+  a Settings button that opens Configuration > EU Withdrawal Button.
+  It isn't shown before Install or after Uninstall.
+- The buttons are one row: ReadMe | Settings | Forum Thread | GitHub,
+  a little narrower so all four fit on one line. Nothing changes on
+  the storefront or in the settings.
+
 v1.1.1
 ------
 - Documentation only: EU Withdrawal Button Pro is out, so the
