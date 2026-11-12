@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3] - 2026-11-11
+
+- **License: GNU General Public License, version 3** (was version 2).
+- **readme.html is replaced by README.md.** The ReadMe button in Plugin Manager opens it inside the admin, for superusers only, in its own window (`index.php?cmd=eu_withdrawal_button_readme`); it is no longer a public file under `zc_plugins/`. The same README.md is at the root of the download.
+- Nothing changes on the storefront or in the settings.
+
+Upgrading: put the v1.1.3 folder beside the old one and click **Upgrade** in Admin > Modules > Plugin Manager. Your settings and every withdrawal statement are kept.
+
 ## [1.1.2] - 2026-10-27
 
 - Plugin Manager only: once the plugin is installed, its panel has a Settings button that opens Configuration > EU Withdrawal Button. It isn't shown before Install or after Uninstall. The installer saves the panel again at Install, Upgrade and Uninstall, because Zen Cart 1.5.8, 2.0 and 2.1 otherwise keep the panel they saw first.
@@ -31,6 +39,7 @@ First release.
 - The two legal labels, verbatim from the directive, for English, Dutch, Finnish, French, German, Italian and Spanish, chosen by language code. Other text falls back to English for a store language with no translation.
 - Preview Email definitions for both emails.
 
+[1.1.3]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.3
 [1.1.2]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.2
 [1.1.1]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.1
 [1.1.0]: https://github.com/dbltoe/EU_Withdrawal_Button/releases/tag/v1.1.0

@@ -1,0 +1,63 @@
+EU Withdrawal Button -- changelog
+=================================
+
+v1.1.3
+------
+Released 2026-11-11.
+
+- License: GNU General Public License, version 3 (was version 2).
+- readme.html is replaced by README.md. The ReadMe button in Plugin
+  Manager opens it inside the admin, for superusers only, in its own
+  window; it is no longer a public file under zc_plugins/.
+- Nothing changes on the storefront or in the settings.
+
+v1.1.2
+------
+- Plugin Manager only: once the plugin is installed, its panel has
+  a Settings button that opens Configuration > EU Withdrawal Button.
+  It isn't shown before Install or after Uninstall.
+- The buttons are one row: ReadMe | Settings | Forum Thread | GitHub,
+  a little narrower so all four fit on one line. Nothing changes on
+  the storefront or in the settings.
+
+v1.1.1
+------
+- Documentation only: EU Withdrawal Button Pro is out, so the
+  readme's Pro section says what it does and where to get it. No code
+  or setting changes.
+
+v1.1.0
+------
+- The order confirmation email carries a "Withdraw From Contract
+  Here" link to the withdrawal page, above your disclaimer. New
+  setting: Withdrawal Link in Order E-Mail? (on). With Selected
+  Countries it follows the order's delivery (else billing) country.
+- Notifiers for add-ons such as EU Withdrawal Button Pro, listed in
+  docs/CUSTOMIZING.md. Nothing changes when nothing listens.
+- If you copied tpl_eu_withdrawal_default.php into your template,
+  copy the new NOTIFY_EU_WITHDRAWAL_TPL_* lines into your copy.
+
+v1.0.0
+------
+The first release.
+
+- A "Withdraw From Contract Here" button in the footer of every page,
+  with no template edits, as Article 11a of the EU Consumer Rights
+  Directive requires from 19 June 2026. The two labels the law fixes are
+  built in for English, German, Spanish, Finnish, French, Italian and
+  Dutch, in the directive's own words.
+- The withdrawal page: name, order and email, then a review screen with
+  the Confirm Withdrawal button. No account needed. A logged-in customer
+  picks from their recent orders, already filled in.
+- An emailed acknowledgment of receipt with the statement and the date
+  and time it was sent, in the Store Time Zone.
+- Nothing is ever refused: an order that doesn't match is saved for you
+  to check, and the spam trap holds a statement for you rather than
+  dropping it.
+- A matched order gets a note in its history, hidden from the customer,
+  and optionally a new status.
+- Customers > Withdrawals: every statement, its status (Received, In
+  Progress, Done), a staff note, and Send Acknowledgment.
+- Show Withdrawal Button To: all visitors, or only visitors in the
+  countries you choose (EU and EEA by default).
+- Preview Email definitions for both emails.
