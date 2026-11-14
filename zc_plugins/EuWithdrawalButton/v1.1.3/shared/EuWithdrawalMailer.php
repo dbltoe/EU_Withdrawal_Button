@@ -10,7 +10,7 @@
  * release 1.5.8 -> 3.0.0).
  *
  * @package  EuWithdrawalButton
- * @license  https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License v2.0
  */
 
 if (!defined('IS_ADMIN_FLAG')) {

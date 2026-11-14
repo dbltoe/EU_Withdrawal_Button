@@ -13,7 +13,7 @@
  * #0b3d91 on white is 10.04:1 (all AAA). Hover deepens the shadow only.
  *
  * @package  EuWithdrawalButton
- * @license  https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License v2.0
  */
 $euwE = static function ($s): string {
     return EuWithdrawalCore::esc((string)$s);

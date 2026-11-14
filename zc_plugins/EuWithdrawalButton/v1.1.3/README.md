@@ -1,6 +1,6 @@
 # EU Withdrawal Button
 
-Version 1.1.3 · Zen Cart 1.5.8 through 3.0.0 · PHP 7.4 through 8.5 · GPL v3 · by My Zen Cart Host (dbltoe)
+Version 1.1.3 · Zen Cart 1.5.8 through 3.0.0 · PHP 7.4 through 8.5 · GPL v2 · by My Zen Cart Host (dbltoe)
 
 The withdrawal button EU law requires of online stores from 19 June 2026 (Article 11a of the EU Consumer Rights Directive), for Zen Cart: an encapsulated plugin, with no core or template files changed.
 
@@ -175,7 +175,7 @@ It needs this plugin, version 1.1.0 or later, installed. It's at myzencartzone.c
 
 Upload the new version's folder beside the old one and click **Upgrade** in Plugin Manager. Your settings and every withdrawal statement are kept. Then **Clean Up** removes the old version's folder.
 
-From 1.0.0 to 1.1.0, one setting is new: *Withdrawal Link in Order E-Mail?*, which arrives switched on. From 1.1.0 to 1.1.1, only this guide changes; there's nothing to set. From 1.1.1 to 1.1.2, only the plugin's panel in Plugin Manager changes. From 1.1.2 to 1.1.3, the license becomes the GNU General Public License, version 3, and this guide replaces readme.html: the ReadMe button in Plugin Manager opens it inside the admin, for superusers, in its own window. Nothing changes on the storefront or in the settings.
+From 1.0.0 to 1.1.0, one setting is new: *Withdrawal Link in Order E-Mail?*, which arrives switched on. From 1.1.0 to 1.1.1, only this guide changes; there's nothing to set. From 1.1.1 to 1.1.2, only the plugin's panel in Plugin Manager changes. From 1.1.2 to 1.1.3, this guide replaces readme.html: the ReadMe button in Plugin Manager opens it inside the admin, for superusers, in its own window. Nothing changes on the storefront or in the settings.
 
 ## Uninstalling
 
@@ -200,8 +200,8 @@ The download also has `docs/INSTALL.md`, `docs/CONFIGURATION.md`, `docs/CUSTOMIZ
 
 ## Changelog
 
-See `CHANGELOG.md`. Version 1.1.3 moves the plugin to the GNU General Public License, version 3, and replaces readme.html with this guide, opened from the ReadMe button in Plugin Manager.
+See `CHANGELOG.md`. Version 1.1.3 replaces readme.html with this guide, opened from the ReadMe button in Plugin Manager.
 
 ## License
 
-EU Withdrawal Button is free software under the GNU General Public License, version 3 (https://www.gnu.org/licenses/gpl-3.0.html); the full text is in `LICENSE`. Copyright © 2026 My Zen Cart Host (dbltoe).
+EU Withdrawal Button is free software under the GNU General Public License, version 2 (https://www.gnu.org/licenses/old-licenses/gpl-2.0.html); the full text is in `LICENSE`. Copyright © 2026 My Zen Cart Host (dbltoe).
